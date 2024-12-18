@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Theater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="movie-container" style="display: flex; padding: 20px;">
+    <!-- Movie Details Section -->
+    <div id="movie-details" style="flex: 2; margin-right: 20px; border: 1px solid #ccc; padding: 20px;">
+      <img id="movie-poster" src="" alt="Poster" style="width: 100%; max-width: 300px; height: auto; margin-bottom: 20px;">
+      <h2 id="movie-title" style="font-size: 24px;"></h2>
+      <p id="movie-runtime" style="font-size: 18px; margin: 5px 0;"></p>
+      <p id="movie-showtime" style="font-size: 18px; margin: 5px 0;"></p>
+      <p id="movie-description" style="font-size: 16px; margin: 10px 0;"></p>
+      <button id="buy-ticket" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Buy Ticket</button>
+      <p id="available-tickets" style="font-size: 18px; margin-top: 10px;"></p>
+    </div>
+
+    <!-- Movie List Section -->
+    <div id="movie-list" style="flex: 1; padding: 20px; border: 1px solid #ccc;">
+      <h3 style="font-size: 20px; margin-bottom: 10px;">Available Movies</h3>
+      <ul id="films" style="list-style-type: none; padding: 0; margin: 0;">
+        <!-- Placeholder list item to be removed by JavaScript -->
+        <li id="placeholder" style="display: none;"></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
